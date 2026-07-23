@@ -484,53 +484,102 @@ body{
 /* VISION PAGE */
 /* ========================= */
 
+/* =========================
+   VISION PAGE
+========================= */
+
 .vision-page{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
     gap:30px;
     padding:60px 8%;
+    background:#08121f;
 }
 
 .vision-box{
     background:#102542;
-    padding:35px;
+    padding:35px 30px;
+    border-radius:15px;
     text-align:center;
-    border-radius:12px;
-    transition:.3s;
-    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    transition:0.35s ease;
+    box-shadow:0 8px 20px rgba(0,0,0,0.30);
+    border-top:4px solid #f4b400;
 }
 
 .vision-box:hover{
     transform:translateY(-10px);
     background:#163b6d;
+    box-shadow:0 12px 30px rgba(244,180,0,0.25);
 }
 
 .vision-box i{
-    font-size:55px;
+    font-size:60px;
     color:#f4b400;
     margin-bottom:20px;
 }
 
 .vision-box h2{
+    color:#ffffff;
+    font-size:28px;
+    font-weight:700;
     margin-bottom:15px;
 }
 
 .vision-box p{
-    color:#ddd;
-    line-height:1.7;
+    color:#d6d6d6;
+    font-size:16px;
+    line-height:1.8;
+    text-align:justify;
 }
 
-.quote{
-    background:#003366;
-    color:white;
+/* Quote Section */
+
+.vision-quote{
+    background:linear-gradient(135deg,#003366,#00509d);
+    color:#ffffff;
     text-align:center;
     padding:70px 20px;
 }
 
-.quote h2{
+.vision-quote h2{
     max-width:900px;
     margin:auto;
-    font-weight:500;
+    font-size:30px;
+    font-weight:600;
+    line-height:1.6;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .vision-page{
+        padding:40px 20px;
+    }
+
+    .vision-box{
+        padding:25px;
+    }
+
+    .vision-box i{
+        font-size:50px;
+    }
+
+    .vision-box h2{
+        font-size:24px;
+    }
+
+    .vision-box p{
+        font-size:15px;
+    }
+
+    .vision-quote{
+        padding:50px 20px;
+    }
+
+    .vision-quote h2{
+        font-size:22px;
+    }
 }
 /* =======================
    HIGHLIGHTS PAGE
@@ -775,7 +824,7 @@ body{
 }
 
 .text-box p{
-    color:yellow;
+    color:black;
     line-height:1.7;
 }
 
