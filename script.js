@@ -18,21 +18,21 @@ window.onload = function () {
         );
     }
 
-    if (window.location.pathname.includes("journey.html")) {
+    if (window.location.pathname.includes("exp".html")) {
         alert(
             "🏛 Leadership Journey\n\n" +
             "Explore the major milestones of Ajitdada Pawar's political journey, including important positions held, years of public service, and key contributions to the state."
         );
     }
 
-    if (window.location.pathname.includes("achievements.html")) {
+    if (window.location.pathname.includes("achievments.html")) {
         alert(
             "🏆 Achievements\n\n" +
             "Discover the significant development projects, awards, infrastructure initiatives, agricultural reforms, irrigation work, and public welfare achievements under Ajitdada Pawar's leadership."
         );
     }
 
-    if (window.location.pathname.includes("highlights.html")) {
+    if (window.location.pathname.includes("states.html")) {
         alert(
             "⭐ Highlights\n\n" +
             "View the most important events, speeches, government initiatives, and memorable moments that reflect Ajitdada Pawar's leadership and public service."
