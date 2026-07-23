@@ -230,6 +230,36 @@ body{
 /* ===============================
    PROFESSIONAL ABOUT CARDS
 =================================*/
+.about-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    max-width:1200px;
+    margin:auto;
+    padding:50px 20px;
+    flex-wrap:wrap;
+}
+
+.about-image{
+    flex:1;
+    min-width:300px;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:15px;
+}
+
+.about-content{
+    flex:1;
+    min-width:300px;
+}
+
+.about-card{
+    width:100%;
+    margin-bottom:20px;
+}
 
 .about-info{
     flex:2;
