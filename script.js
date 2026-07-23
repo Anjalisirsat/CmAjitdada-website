@@ -1,42 +1,55 @@
 // Welcome Message (Only Once)
 window.onload = function () {
-    if (!sessionStorage.getItem("welcomeShown")) {
-        alert("Welcome to Hon'ble Shri Ajitdada Pawar Website");
-        sessionStorage.setItem("welcomeShown", "true");
+
+    if (window.location.pathname.includes("index.html")) {
+        if (!sessionStorage.getItem("welcomeShown")) {
+            alert(
+                "🙏 Welcome to the Official Website of Hon'ble Shri Ajitdada Pawar.\n\n" +
+                "Explore his leadership journey, achievements, development initiatives, vision for Maharashtra, and memorable moments through this website."
+            );
+            sessionStorage.setItem("welcomeShown", "true");
+        }
+    }
+
+    if (window.location.pathname.includes("about.html")) {
+        alert(
+            "📖 About Ajitdada Pawar\n\n" +
+            "This section introduces Hon'ble Shri Ajitdada Pawar, highlighting his personal background, political career, leadership qualities, and his commitment to the development of Maharashtra."
+        );
+    }
+
+    if (window.location.pathname.includes("journey.html")) {
+        alert(
+            "🏛 Leadership Journey\n\n" +
+            "Explore the major milestones of Ajitdada Pawar's political journey, including important positions held, years of public service, and key contributions to the state."
+        );
+    }
+
+    if (window.location.pathname.includes("achievements.html")) {
+        alert(
+            "🏆 Achievements\n\n" +
+            "Discover the significant development projects, awards, infrastructure initiatives, agricultural reforms, irrigation work, and public welfare achievements under Ajitdada Pawar's leadership."
+        );
+    }
+
+    if (window.location.pathname.includes("highlights.html")) {
+        alert(
+            "⭐ Highlights\n\n" +
+            "View the most important events, speeches, government initiatives, and memorable moments that reflect Ajitdada Pawar's leadership and public service."
+        );
+    }
+
+    if (window.location.pathname.includes("gallery.html")) {
+        alert(
+            "🖼 Gallery\n\n" +
+            "Browse a collection of photographs showcasing public meetings, development projects, official events, and interactions with citizens."
+        );
+    }
+
+    if (window.location.pathname.includes("vision.html")) {
+        alert(
+            "🚀 Vision for Maharashtra\n\n" +
+            "Learn about Ajitdada Pawar's vision for a progressive Maharashtra through sustainable development, modern infrastructure, quality education, empowered farmers, employment generation, and digital governance."
+        );
     }
 };
-
-// Home
-function homeAlert() {
-    alert("Welcome to the Home Section");
-}
-
-// About
-function aboutAlert() {
-    alert("This is the About Section");
-}
-
-// Journey
-function journeyAlert() {
-    alert("This is the Leadership Journey Section");
-}
-
-// Achievements
-function achievementAlert() {
-    alert("This is the Achievements Section");
-}
-
-// Highlights
-function highlightsAlert() {
-    alert("This is the Highlights Section");
-}
-
-// Gallery
-function galleryAlert() {
-    alert("This is the Gallery Section");
-}
-
-// Vision
-function visionAlert() {
-    alert("This is the Vision Section");
-}
