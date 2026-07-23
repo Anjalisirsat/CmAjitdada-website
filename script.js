@@ -18,7 +18,7 @@ window.onload = function () {
         );
     }
 
-    if (window.location.pathname.includes("exp".html")) {
+    if (window.location.pathname.includes("exp.html")) {
         alert(
             "🏛 Leadership Journey\n\n" +
             "Explore the major milestones of Ajitdada Pawar's political journey, including important positions held, years of public service, and key contributions to the state."
