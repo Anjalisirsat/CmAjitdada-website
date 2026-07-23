@@ -230,6 +230,13 @@ body{
 /* ===============================
    PROFESSIONAL ABOUT CARDS
 =================================*/
+/* Background */
+body{
+    background:#0b0b0b;   /* Black */
+    color:#ffffff;
+}
+
+/* Image */
 .about-img{
     width:100%;
     display:flex;
@@ -244,62 +251,30 @@ body{
     height:auto;
     display:block;
     border-radius:15px;
-    border:4px solid #003366;
-    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+    border:4px solid #1b4f9c;
+    box-shadow:0 12px 30px rgba(0,0,0,0.5);
     object-fit:cover;
 }
-.about-container{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:40px;
-    max-width:1200px;
-    margin:auto;
-    padding:50px 20px;
-    flex-wrap:wrap;
-}
 
-.about-image{
-    flex:1;
-    min-width:500px;
-}
-
-.about-image img{
-    width:100%;
-    border-radius:15px;
-}
-
-.about-content{
-    flex:1;
-    min-width:300px;
-}
-
-.about-card{
-    width:100%;
-    margin-bottom:20px;
-}
-
-.about-info{
-    flex:2;
-}
-
-/* Main Card */
-
+/* Card */
 .info-card{
-    background:#c4bdba;
+    background:#0d2b52;          /* Dark Blue */
+    border:1px solid #1b4f9c;
     border-radius:15px;
     padding:28px;
     margin-bottom:25px;
-    border-left:6px solid #f4b400;
-    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    box-shadow:0 10px 25px rgba(0,0,0,0.45);
     transition:0.4s ease;
 }
 
+.info-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.6);
+}
 
 /* Heading */
-
 .info-card h2{
-    color:#003366;
+    color:#ffffff;
     font-size:28px;
     margin-bottom:18px;
     display:flex;
@@ -308,91 +283,84 @@ body{
     padding-bottom:10px;
 }
 
-
 /* Paragraph */
-
 .info-card p{
     font-size:16px;
     line-height:1.9;
-    color:#080202;
+    color:#d9e8ff;
     text-align:justify;
 }
 
 /* List */
-
-.info-card ul{
+.work-list{
     list-style:none;
     padding:0;
-    margin-top:15px;
+    margin-top:20px;
 }
 
-.info-card ul li{
-    background:#f7f9fc;
-    margin-bottom:12px;
-    padding:15px;
-    border-left:5px solid #003366;
+.work-list li{
+    background:#143d74;
+    color:#ffffff;
+    margin:10px 0;
+    padding:12px 18px;
+    border-left:5px solid #f4b400;
     border-radius:8px;
-    transition:.3s;
+    transition:0.3s;
     font-size:16px;
-    color:#444;
 }
 
-.info-card ul li:hover{
-    background:#003366;
-    color:white;
+.work-list li:hover{
+    background:#1f5fb8;
     transform:translateX(8px);
 }
 
-/* Quote Card */
-
+/* Quote */
 .quote{
     width:90%;
     max-width:1000px;
     margin:60px auto;
-    background:linear-gradient(135deg,#003366,#00509d);
-    color:rgb(32, 51, 175);
+    background:linear-gradient(135deg,#0d2b52,#1f5fb8);
+    color:#ffffff;
     padding:50px;
     border-radius:15px;
     text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    box-shadow:0 12px 30px rgba(0,0,0,.5);
 }
 
 .quote h2{
     font-size:28px;
     font-weight:500;
     line-height:1.7;
+    color:#ffffff;
 }
 
 /* Responsive */
-
 @media(max-width:768px){
 
-.info-card{
-    padding:20px;
-}
+    .info-card{
+        padding:20px;
+    }
 
-.info-card h2{
-    font-size:22px;
-}
+    .info-card h2{
+        font-size:22px;
+    }
 
-.info-card p{
-    font-size:15px;
-}
+    .info-card p{
+        font-size:15px;
+    }
 
-.info-card ul li{
-    font-size:15px;
-}
+    .work-list li{
+        font-size:15px;
+    }
 
-.quote{
-    padding:30px 20px;
-}
+    .quote{
+        padding:30px 20px;
+    }
 
-.quote h2{
-    font-size:22px;
+    .quote h2{
+        font-size:22px;
+    }
 }
-
-}
-
 /* ===================== */
 /* ACHIEVEMENTS PAGE */
 /* ===================== */
