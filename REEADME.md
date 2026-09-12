@@ -1,4 +1,8 @@
+# My Website
+
+This is my first GitHub project.
+
 ## About This Project
 
-This is my first GitHub pull request practice.
+I am learning Git and GitHub.
 
